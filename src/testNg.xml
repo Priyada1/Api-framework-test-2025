@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="MyTestSuite">
+    <test name="RegressionTests">
+        <classes>
+            <class name="TestCases.FindSafeZoneTest"/>
+        </classes>
+    </test>
+</suite>
+        /Users/chakrapanipriyadarshi/Desktop/Api-framework-test-2025/untitled/src/main/resources/config.properties
