@@ -23,6 +23,7 @@ public class Covid19TrackerApiUtils {
         System.out.println("token : "+x_app_token);
         Response res = given().contentType(ContentType.JSON).header(new Header("x-app-token", x_app_token)).when()
                 .log().all().get(BASE_URL + GET_SUMMARY_SPLIT);
+        System.out.println(res.body().asString());
 
         return res;
     }
