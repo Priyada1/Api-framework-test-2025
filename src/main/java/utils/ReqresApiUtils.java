@@ -1,5 +1,6 @@
 package utils;
 
+import config.EndPoints;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
@@ -8,8 +9,8 @@ import static io.restassured.RestAssured.given;
 public class ReqresApiUtils {
 
 ConfigReader config = new ConfigReader();
-String url = "/api/users?page=2";
-final String url1 = config.getProperty("reqres_base_url") + url;
+
+final String url1 = config.getProperty("reqres_base_url") + EndPoints.GET_API_USERS;
 
     public Response findListUsers()
     {
