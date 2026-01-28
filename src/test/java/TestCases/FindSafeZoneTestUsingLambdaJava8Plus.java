@@ -47,7 +47,7 @@ public class FindSafeZoneTestUsingLambdaJava8Plus {
         map.forEach((key,value) -> log.info("Safe Zone Province : "+key+" With Total Active Cases : "+value));
 
 
-
+        jsonArray.toList().forEach(System.out::println);
 
 
 
